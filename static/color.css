@@ -1,0 +1,51 @@
+:root {
+  
+    /*========== Colors ==========*/
+    --hue: 207;
+    --sat: 90%;
+    --lig: 61%;
+    --background-primary: #fff;
+    --foreground-primary: hsl(218, 23%, 23%);
+    --foreground-secondary: hsl(216, 15%, 52%);
+    --primary: rgba(135,100,255,.9)!important;
+    --secondary: #9da0f9;
+    --tertiary:#222;
+    --action-primary: hsl(214, 32%, 91%);
+    --action-secondary: hsl(210, 38%, 95%);
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --color-tip:#fff;
+
+
+    /*========== Font and typography ==========*/
+
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+
+    /* properties */
+    --transition-property-common: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+    --transition-duration-fast: 150ms;
+    --transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  }
+  body.dark-theme {
+    --primary: rgba(135,100,255,.9)!important;
+    --background-primary: hsl(218, 23%, 23%);
+    --foreground-primary: hsl(210, 38%, 95%);
+    --action-primary: hsl(216, 15%, 52%);
+    --tertiary: hsl(211, 25%, 84%);
+    --title-color: hsl(var(--hue), 12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --body-color: hsl(var(--hue), 40%, 8%);
+    --background: hsl(var(--hue), 24%, 12%);
+    --color-tip:#222;
+  }
+
+  

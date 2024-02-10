@@ -6,6 +6,6 @@
     <title>Amu-Whispers</title>
 </head>
 <body>
-    <h1>Anonysmous Messages!</h1>
+    <h1>Post Anonysmously to your mates at Campus!</h1>
 </body>
 </html>
