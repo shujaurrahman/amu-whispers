@@ -5,19 +5,14 @@
     --sat: 90%;
     --lig: 61%;
     --background-primary: #fff;
-    --foreground-primary: hsl(218, 23%, 23%);
-    --foreground-secondary: hsl(216, 15%, 52%);
-    --primary: rgba(135,100,255,.9)!important;
-    --secondary: #9da0f9;
-    --tertiary:#222;
-    --action-primary: hsl(214, 32%, 91%);
-    --action-secondary: hsl(210, 38%, 95%);
-    --title-color: hsl(var(--hue), 12%, 15%);
-    --text-color: hsl(var(--hue), 12%, 45%);
-    --text-color-light: hsl(var(--hue), 8%, 75%);
-    --text-color-lighten: hsl(var(--hue), 8%, 92%);
-    --body-color: hsl(var(--hue), 100%, 99%);
-    --color-tip:#fff;
+    --foreground-primary:#EDF1D6;
+    --primary: #C7B7A3;
+    --secondary:#E8D8C4;
+    --basedark:#B67352;
+    --darktext:#222;
+    --lighttext:#7a7a7a;
+
+
 
 
     /*========== Font and typography ==========*/
@@ -35,7 +30,8 @@
     --transition-duration-fast: 150ms;
     --transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
   }
-  body.dark-theme {
+  
+  /* body.dark-theme {
     --primary: rgba(135,100,255,.9)!important;
     --background-primary: hsl(218, 23%, 23%);
     --foreground-primary: hsl(210, 38%, 95%);
@@ -46,6 +42,6 @@
     --body-color: hsl(var(--hue), 40%, 8%);
     --background: hsl(var(--hue), 24%, 12%);
     --color-tip:#222;
-  }
+  } */
 
   

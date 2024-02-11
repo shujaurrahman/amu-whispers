@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="refresh" content="300" name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AMU-Whispers</title>
-  <link rel="stylesheet" href="./static/style.css" />
+  <link rel="stylesheet" href="../static/style.css" />
 
 </head>
 
@@ -13,7 +13,137 @@
   <main>
     <header id="header">
       <?php
-      require "./partial/nav.php";
+      require "./nav.php";
+
+
+
+
+      // // Modal code(backend verification) to sign into the profile from index file============================ 
+      // if (isset($_SESSION) and isset($_SESSION['username'])) {
+
+      // }
+
+
+
+      // $boolUsernameNotFound = false;
+      // $boolWrongPassword = false;
+
+      // $userMssg = "";
+      // $userError = "";
+      // $userDisplay = "none";
+
+      // $passwordMssg = "";
+      // $passwordError = "";
+      // $passwordDisplay = "none";
+
+
+
+      // $loginMssg = "";
+      // $loginError = "";
+      // $loginDisplay = "none";
+      
+       
+      // //Alert for user to sign in 
+      // if(!$boolLoggedIn){
+      //   $loginMssg = "You need to log in first in order to apply/claim policies.";
+      //   $loginError = "class = 'error'";
+      //   $loginDisplay = "block";
+      // }
+      // if (isset($_GET) and isset($_GET['paymentinvoicemailed'])){
+      //   $loginMssg = "Payment Was Successfull. Invoice Sent to your Email.";
+      //   $loginError = "class = 'error'";
+      //   $loginDisplay = "block";
+      // }
+      // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      //   $username = $_POST["username"];
+      //   $password = $_POST["password"];
+
+      //   $sql = "SELECT * FROM `alluser` WHERE `username` = '$username'";
+      //   $result = mysqli_query($conn, $sql);
+
+      //   $aff  = mysqli_affected_rows($conn);
+      //   if ($aff<1) {
+      //     $boolUsernameNotFound = true;
+      //   } 
+      //   else{
+      //     $data='';
+      //      $data = mysqli_fetch_object($result);
+      //     $passwordInDatabase = $data->{'password'};
+      //     $status=$data->{'status'};
+      //     $email=$data->{'email'};
+      //     if (password_verify($password,$passwordInDatabase)) {
+      //       $boolWrongPassword = false;
+      //     }
+      //     else{
+      //       $boolWrongPassword=true;
+
+      //       // session_start();
+      //     }
+      //     // echo $boolWrongPassword;
+      //     if (!$boolWrongPassword) {
+      //       if($status=='verified'){
+      //       $_SESSION["username"] = $username;
+      //       $_SESSION["email"] = $email;
+      //       $loginMssg = "Logged in Successfully";
+      //       $loginError = "class = 'error'";
+      //       $loginDisplay = "block";
+      //       $select_sql2 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
+      //       if(mysqli_num_rows($select_sql2) > 0){
+      //           $result = mysqli_fetch_assoc($select_sql2);
+      //           $status = "Online now";
+      //           $sql = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE email = '{$email}'");
+      //           $_SESSION['unique_id'] = $result['unique_id'];
+      //           echo "success";
+      //       }else{
+      //           echo "This email address not Exist!";
+      //       }
+      //       header("Location: $website/user profile/profile.php");
+      //       $sql2="UPDATE `notify` SET `signed_in`= '1' WHERE `username`='$username'";
+      //       $result2=mysqli_query($conn,$sql2);
+      //       }
+      //       else{
+      //         $userMssg = "Looks like your email isn't verified Verify Now";
+      //         $userError = "class = 'error'";
+      //         $userDisplay = "block";
+      //         $_SESSION["email"] = $email;
+      //         echo "
+      //         <script>
+      //         setInterval(() => {
+      //           window.location = './authentication/user-otp.php';
+      //         }, 2200);
+      //         </script>
+      //         ";
+      //         // header("Location: ./authentication/user-otp.php");
+      //       }
+        
+      //     }
+      //   }
+
+
+
+      //   if ($boolUsernameNotFound) {
+      //     $userMssg = "Username not Found";
+      //     $userError = "class = 'error'";
+      //     $userDisplay = "block";
+      //   }
+      //    elseif($boolWrongPassword) {
+      //     $sql2="UPDATE `notify` SET `pass_activity`= '1' WHERE `username`='$username'";
+      //     $result2=mysqli_query($conn,$sql2);
+      //     $passwordMssg = "Wrong Password";
+      //     $passwordError = "class = 'error'";
+      //     $passwordDisplay = "block";
+      //   }
+      // }
+
+
+      // echo "
+      // <p $userError style='display: $userDisplay;'>$userMssg</p>
+      // <p $passwordError style='display: $passwordDisplay;'>$passwordMssg</p>
+      // <p $loginError style='display: $loginDisplay;'>$loginMssg</p>";
+
+
+
+
 ?>
 
       <div class="header-content">
@@ -51,8 +181,7 @@
       </div>
     </header>
 
-
-<!-- =======================================About container===================================================-->
+<!-- ==========================================================================================-->
 
     <section class="about section" id="about">
       <div class="container">
@@ -109,9 +238,7 @@
         </div>
       </div>
     </section>
-
-
-  <!-- ==================================== Footer ====================================================== -->
+  <!-- ====================================Footer====================================================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-links">
