@@ -13,6 +13,12 @@
 <body>
 <?php
 
+
+
+
+
+// $website = "";
+// Variable for linking flies urls ============================================
 $signUp = "$website/sign up/signup.php";
 $profile = "$website/user profile/profile.php";
 $logOut = "$website/logout/logout.php";
@@ -23,6 +29,7 @@ $userProfile="$website/user profile/profile.php";
 $testimonial="$website/testimonial/testimonial.php";
 $notification="$website/notify/notify.php";
 $chat="$website/chat/users.php";
+
 
 
 $headBlock = '<div class="logo">
@@ -39,6 +46,7 @@ $notifyBlock="
 <a href='$notification?username=$currentUser'><i class='fas fa-solid fa-envelope fa-2x'></i><span class='badge badge-danger' style='background-color:red !important;  border-radius:50%; padding:0 6px;
 position:relative; top:-20px; left:-17px; color: white;'>$sum</span></a>
 ";
+
 
 
 if($boolLoggedIn){

@@ -13,7 +13,7 @@
   <main>
     <header id="header">
       <?php
-      require "./partial/nav.php";
+      require_once "./partials/common/nav.php";
 ?>
 
       <div class="header-content">
