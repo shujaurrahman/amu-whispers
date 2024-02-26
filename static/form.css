@@ -21,7 +21,6 @@ body {
 
 #login{
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -35,7 +34,7 @@ body {
 }
 
 #login #formLogin h1,h2{
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     text-align: center;
 }
 h3{
@@ -68,7 +67,7 @@ h3{
     position: absolute;
     left: 16px;
     top: 10px;
-    background-color: var(--body-color);
+    background-color: var(--background-primary);
     padding: 0px 5px;
     color: #adb5bd;
     font-size: 16px;
@@ -81,8 +80,8 @@ h3{
     padding: 10px 30px;
     outline: none;
     border: none;
-    background-color: var(--primary);
-    color: #f8f9fa;
+    background-color: var(--secondary);
+    color: var(--darktext);
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
@@ -104,17 +103,18 @@ a{
 }
 
 a:hover{
-    color: black;
+    color: black !important;
 }
 #login #formLogin .submitButton:hover{
     border-radius: 5px;
+    
 }
 
 #login #formLogin .inputLogin:focus + .labelLogin{
     top: -10px;
     font-size: 13px;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--secondary);
     z-index: 2;
 }
 

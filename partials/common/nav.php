@@ -8,7 +8,6 @@
        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="fonts/icomoon/style.css">
        
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
 </head>
 <body>
 <?php
@@ -17,21 +16,21 @@
 
 
 
-// $website = "";
+$website = "http://localhost/amuwisper";
 // Variable for linking flies urls ============================================
-$signUp = "$website/sign up/signup.php";
+$signUp = "$website/login/index.php";
 $profile = "$website/user profile/profile.php";
 $logOut = "$website/logout/logout.php";
 $contactUs = "$website/contact us/contactus.php";
 $claim= "$website/claim/claim.php";
-$homePage = "$website/index.php";
+$homePage = "/amuwisper/";
 $userProfile="$website/user profile/profile.php";
 $testimonial="$website/testimonial/testimonial.php";
 $notification="$website/notify/notify.php";
 $chat="$website/chat/users.php";
 
 
-
+//Navigation Block
 $headBlock = '<div class="logo">
               <img src"" class="logoimg"alt="" />
               </div>';
@@ -48,24 +47,34 @@ position:relative; top:-20px; left:-17px; color: white;'>$sum</span></a>
 ";
 
 
-
-if($boolLoggedIn){
-  $profileBlock= "<a href='$userProfile' class='active'>$currentUser</a>";
+if($_SERVER['REQUEST_URI']==$homePage){
+  $signInBlock = "<a href='$website/login/index.php' class='active' id='openBtn'>Sign in</a>";
 
 }
 else{
-   if($_SERVER['REQUEST_URI']!=$homePage)
-   $signInBlock = "<a href='$homePage' class='active' id='openBtn'>Sign in</a>";
-   else{
-   $signInBlock = "<a href='#' class='active' id='openBtn'>Sign in</a>";
-   }
-
+  $signInBlock="";
 }
+//user block sessioon check 
+// if($boolLoggedIn){
+//   $profileBlock= "<a href='$userProfile' class='active'>$currentUser</a>";
+
+// }
+// else{
+//    if($_SERVER['REQUEST_URI']!=$homePage)
+//    $signInBlock = "<a href='$website/login/index.php' class='active' id='openBtn'>Sign in</a>";
+//    else{
+//    $signInBlock = "";
+//    }
+//   }
+
 if(!$boolLoggedIn){
 if($_SERVER['REQUEST_URI']=$claim){
   $claimBlock="<a href='$homePage'>Whispers</a>";
 }
 }
+
+
+// Login Session check 
 if ($boolLoggedIn) {
     echo "
     <nav>
@@ -108,8 +117,6 @@ else{
 
 ";
 }
-
 ?>
-
 </body>
 </html>

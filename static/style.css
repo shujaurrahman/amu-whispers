@@ -142,8 +142,8 @@ img {
 .btn {
   display: inline-block;
   padding: 0.85rem 2rem;
-  background-color: var(--primary);
-  color: var(--boldtext);
+  background-color: var(--secondary);
+  color: var(--darktext);
   border-radius: 2rem;
   font-size: 1.05rem;
   text-transform: uppercase;
@@ -152,8 +152,8 @@ img {
 }
 
 .btn:hover {
-  color: var(--background-primary);
-  background-color: var(--basedark);
+  color: var(--secondary);
+  background-color: var(--background-primary);
 }
 
 .btn.small {
@@ -172,7 +172,7 @@ img {
 
 header {
   width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   overflow: hidden;
   position: relative;
 }
@@ -214,7 +214,7 @@ nav .container {
 }
 
 .links a.active {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--darktext);
   border-radius: 2rem;
   font-size: 1rem;
@@ -223,12 +223,12 @@ nav .container {
 }
 
 .links a:hover {
-  color: var(--basedark);
+  color: var(--secondary);
 }
 
 .links a.active:hover {
-  color: var(--dark-one);
-  background-color: var(--light-two);
+  color: var(--secondary);
+  background-color: var(--background-primary);
 }
 
 .hamburger-menu {
@@ -246,7 +246,7 @@ nav .container {
   width: 2.1rem;
   height: 3px;
   border-radius: 3px;
-  background-color: var(--dark-one);
+  background-color: var(--secondary);
   transition: 0.5s;
 }
 
@@ -257,7 +257,7 @@ nav .container {
   width: 2.1rem;
   height: 3px;
   border-radius: 3px;
-  background-color: var(--dark-one);
+  background-color: var(--secondary);
   transition: 0.5s;
 }
 
@@ -684,7 +684,7 @@ nav.open .links {
 }
 
 .footer-links a {
-  color: var(--dark-one);
+  color: var(--darktext);
   font-size: 1.25rem;
   display: inline-block;
   transition: 0.3s;
@@ -692,7 +692,7 @@ nav.open .links {
 }
 
 .footer-links a:hover {
-  color: var(--background-primary);
+  color: var(--secondary);
 }
 
 
@@ -733,14 +733,14 @@ nav.open .links {
 
 
 .social-media a {
-  color: var(--dark-three);
+  color: var(--darktext);
   font-size: 2rem;
   margin-right: 0.4rem;
   transition: 0.3s;
 }
 
 .social-media a:hover {
-  color: var(--secondary);
+  color: var(--background-primary);
 }
 
 .back-btn-wrap {
@@ -754,7 +754,7 @@ nav.open .links {
   justify-content: center;
   height: 55px;
   width: 55px;
-  background-color: var(--light-three);
+  background-color: var(--primary);
   border-radius: 50%;
   color:var(--darktext);
   font-size: 1.2rem;
@@ -765,8 +765,8 @@ nav.open .links {
 }
 
 .back-btn:hover {
-  background-color: var(--light-thr);
-  color: var(--dark-one);
+  background-color: var(--secondary);
+  color: var(--background-primary);
 }
 
 .back-btn-wrap:before {

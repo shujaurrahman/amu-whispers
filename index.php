@@ -77,35 +77,6 @@
             <p class="text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut at dolor animi non ratione corrupti illum aut temporibus nesciunt minima explicabo, porro iusto quisquam laborum maiores doloribus? Dolore, atque libero!
             </p>
-            <br />
-            <h3 class="title-sm">Features</h3>
-            <div class="skills">
-              <div class="skill html">
-                <h3 class="skill-title">Easy to use</h3>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="98.6%"></div>
-                </div>
-              </div>
-              <div class="skill css">
-                <h3 class="skill-title">Be Connected</h3>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="90.6%"></div>
-                </div>
-              </div>
-              <div class="skill js">
-                <h3 class="skill-title">Privact</h3>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="98.4%"></div>
-                </div>
-              </div>
-            </div>
-            <a href="https://www.who.int/health-topics/coronavirus#tab=tab_3" target="blank" class="btn">More Info</a>
-          </div>
-
-          <div class="column-2 image">
-            <img src="./static/img/about1.svg" alt="" /><br /><br />
-            <img src="./static/img/about2.svg" alt="" />
-          </div>
         </div>
       </div>
     </section>
@@ -150,8 +121,9 @@
     </div>
   </footer>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="static/js/isotope.pkgd.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<?php
+// require_once './partials/common/jslink.php';
+?>
+<script src="./js/index.js"></script>
 
 </html>

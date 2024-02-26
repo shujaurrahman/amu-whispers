@@ -4,17 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome|Login</title>
-    <link rel="stylesheet" href="../static/form.css">
+    <title>Login</title>
     <?php
     require_once '../partials/common/font.php';
     ?>
+    <link rel="stylesheet" href="../static/form.css">
+    <link rel="stylesheet" href="../static/style.css" />
+    <style>
+      #header{
+        background-color: var(--background-primary);
+      }
+      .links a:hover{
+        color: var(--secondary) !important;
+      }
+    </style>
   </head>
   <body>
-
-  <div class="nanobar my-class" id="my-id" style="position: fixed;">
-    <div class="bar"></div>
-</div>
+  <header id="header">
+  <?php
+      require_once "../partials/common/nav.php";
+?>
+    </header>
     <div id="login">
         <div id="formLogin">
 
@@ -49,9 +59,9 @@
 
         </div>
     </div>
-
-
-
-
   </body>
+  <?php
+// require_once '../partials/common/jslink.php';
+?>
+  <script src="../js/index.js"></script>
 </html>

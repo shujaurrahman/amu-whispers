@@ -5,18 +5,12 @@
     --sat: 90%;
     --lig: 61%;
     --background-primary: #fff;
-    --foreground-primary:#EDF1D6;
     --primary: #C7B7A3;
-    --secondary:#E8D8C4;
-    --basedark:#B67352;
+    --secondary:#B67352;
     --darktext:#222;
     --lighttext:#7a7a7a;
 
-
-
-
     /*========== Font and typography ==========*/
-
     --body-font: 'Poppins', sans-serif;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -31,17 +25,6 @@
     --transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
   }
   
-  /* body.dark-theme {
-    --primary: rgba(135,100,255,.9)!important;
-    --background-primary: hsl(218, 23%, 23%);
-    --foreground-primary: hsl(210, 38%, 95%);
-    --action-primary: hsl(216, 15%, 52%);
-    --tertiary: hsl(211, 25%, 84%);
-    --title-color: hsl(var(--hue), 12%, 95%);
-    --text-color: hsl(var(--hue), 12%, 75%);
-    --body-color: hsl(var(--hue), 40%, 8%);
-    --background: hsl(var(--hue), 24%, 12%);
-    --color-tip:#222;
-  } */
+
 
   
